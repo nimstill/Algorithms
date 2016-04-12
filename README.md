@@ -4,3 +4,7 @@
 ###Data Structures & Algorithms with JavaScript
 
 
+**编写出容易阅读的代码和编写出让计算机能正确执行的代码同等重要**
+
+
+
