@@ -86,3 +86,45 @@ var words = [];
 var misspelled = word.filter(afterc);
 print(misspelled);
 
+
+//二维数组
+
+Array.matrix = function(numrows, numcols, initial) {
+    var arr = [];
+    for (var i =0; j<numcols; ++j) {
+        var columns = [];
+        for (var j= ; j<numcols; ++j） {
+            columns[j] = initial;    
+        }
+        arr[i] = columns;
+    }
+    return arr;
+}
+
+//对象中的数组
+
+function weekTemps(){
+    this.dataStore = [];
+    this.add = add;
+    this.average = average;
+}
+
+function add(temp) {
+    this.dataStore.push(temp);
+}
+
+function average(){
+    var total = ;
+    for (var i = 0; i< this.dataStore.length; i++) {
+        total += this.dataStore[i];
+    }
+    return total / this.dataStore.length;
+}
+
+var thisWeek = new weekTemps();
+thisWeek.add();
+
+
+print(thisWeek.average());
+
+
