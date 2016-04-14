@@ -19,3 +19,14 @@ function copy(arr1, arr2) {
     }
 }
 
+//paixu 
+
+function compare(num1, num2) {
+    return num1 - num2;
+}
+
+var nums = [3,1,2,100];
+
+nums.sort(compare);
+
+/*/*/*/*/*/*/*
