@@ -57,3 +57,32 @@ var sum = nums.reduce(add);
 // reduceRight() 他是从右往左执行
 
 
+function curve(grade) {
+    return grade += 5;
+}
+var grades = [77, 65 ,81];
+var newgrades = grades.map(curve);
+print(newgrades); //
+
+//字符串使用
+ 
+function first(word) {
+    return word[0];
+}
+
+var words = ["for", "your", "information"];
+var acronym = words.map(first);
+print(acronym.join(""));  //xianshi   "fyi"
+
+//filter 过滤字符串数组
+
+function afterc(str) {
+    if (str.indexOf("cie") > -1) {
+        return true;
+    }
+    return false;
+}
+var words = [];
+var misspelled = word.filter(afterc);
+print(misspelled);
+
