@@ -29,4 +29,31 @@ var nums = [3,1,2,100];
 
 nums.sort(compare);
 
-/*/*/*/*/*/*/*
+//*/*/*/*/*/*/*/
+
+//diedaiqi   every()
+
+function isEven(num) {
+    return num % 2 == 0;
+} 
+
+var nums = [2,46,];
+var even = nums.every(isEven);
+if(even) {
+    print("all numbers are even");
+}
+else {
+    print("not all numbers are even");
+}
+
+//reduce()
+
+function add(runningTotal, currentValue) {
+    return runningToltal + currentValue;
+}
+var nums = [1,2,3,4];
+var sum = nums.reduce(add);
+
+// reduceRight() 他是从右往左执行
+
+
